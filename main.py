@@ -4,7 +4,7 @@ import turtle
 def perform_switch_case(state, t, turn):
     x = round(t.position()[0])
     y = round(t.position()[1])
-    num_turns = 1  # Всего 1 виток
+    num_turns = 1  
 
     if state == "INIT":
         if True:
@@ -72,7 +72,7 @@ def perform_switch_case(state, t, turn):
     if state == "UP4":
         t.forward(5)
         if y >= 200:
-            if turn >= num_turns:  # Выход после завершения витка
+            if turn >= num_turns:  
                 state = "STOP"
                 return state, turn
             state = "RIGHT1"
