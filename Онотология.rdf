@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-18="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasOrder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#hasStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#usesInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#usesInterface">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Order"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_AddToCart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_AddToCart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+        <untitled-ontology-18:usesInterface rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_AddToCart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ChoosePayment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ChoosePayment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+        <untitled-ontology-18:usesInterface rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_PaymentMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ConfirmOrder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ConfirmOrder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+        <untitled-ontology-18:usesInterface rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_ConfirmOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_SelectAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_SelectAddress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action"/>
+        <untitled-ontology-18:usesInterface rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Screen_DeliveryAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_AddToCart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_AddToCart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+        <untitled-ontology-18:name>&quot;Добавить в корзину&quot;</untitled-ontology-18:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_ConfirmOrder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_ConfirmOrder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+        <untitled-ontology-18:name>&quot;Подтвердить заказ&quot;</untitled-ontology-18:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_PaymentMethod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Button_PaymentMethod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+        <untitled-ontology-18:name>&quot;Способ оплаты&quot;</untitled-ontology-18:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Current_Order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Current_Order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Order"/>
+        <untitled-ontology-18:hasStep rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_SelectProducts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Screen_DeliveryAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Screen_DeliveryAddress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Interface"/>
+        <untitled-ontology-18:name>&quot;Адрес доставки&quot;</untitled-ontology-18:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_ChooseDelivery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_ChooseDelivery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+        <untitled-ontology-18:hasAction rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_SelectAddress"/>
+        <untitled-ontology-18:hasStep rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Payment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Confirmation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Confirmation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+        <untitled-ontology-18:hasAction rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ConfirmOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Payment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Payment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+        <untitled-ontology-18:hasAction rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_ChoosePayment"/>
+        <untitled-ontology-18:hasStep rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_Confirmation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_SelectProducts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_SelectProducts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step"/>
+        <untitled-ontology-18:hasAction rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Action_AddToCart"/>
+        <untitled-ontology-18:hasStep rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Step_ChooseDelivery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User_KazanExpress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User_KazanExpress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#User"/>
+        <untitled-ontology-18:hasOrder rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-18#Current_Order"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
